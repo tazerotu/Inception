@@ -1,5 +1,3 @@
-<!-- At every session start run : sudo service docker start -->
-
 *This project has been created as part of the 42 curriculum by tazerotu.*
 
 # Inception
