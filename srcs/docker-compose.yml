@@ -86,3 +86,4 @@ volumes:
 networks:
     networkInception:
         driver: bridge
+        name: networkInception
