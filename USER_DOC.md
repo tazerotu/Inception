@@ -20,7 +20,7 @@ make
 ```
 
 This will:
-1. Create the data directories under `/home/tazerotu/data/`
+1. Create the data directories under `/home/ttas/data/`
 2. Build all Docker images from their Dockerfiles
 3. Start all containers in detached mode
 
@@ -37,13 +37,13 @@ make clean
 ## Accessing the website
 
 Once the stack is running, open your browser and go to:
-https://tazerotu.42.fr
+https://ttas.42.fr
 
 > Your browser will warn about the self-signed certificate — this is expected.
 > Click "Advanced" → "Proceed" to continue.
 
 ## Accessing the WordPress administration panel
-https://tazerotu.42.fr/wp-admin
+https://ttas.42.fr/wp-admin
 
 Log in with the admin credentials defined in your `.env` file:
 - **Username**: `WORDPRESS_ADMIN_USER`

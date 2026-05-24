@@ -9,7 +9,7 @@
 
 Add the domain to your hosts file:
 ```bash
-echo "127.0.0.1 tazerotu.42.fr" | sudo tee -a /etc/hosts
+echo "127.0.0.1 ttas.42.fr" | sudo tee -a /etc/hosts
 ```
 
 ## Project structure
@@ -43,21 +43,21 @@ Located at `srcs/.env`. Contains all environment variables used by the container
 Copy the template below and fill in your values:
 
 ```env
-USERNAME=tazerotu
-DOMAIN_NAME=tazerotu.42.fr
+USERNAME=ttas
+DOMAIN_NAME=ttas.42.fr
 
 SQL_DATABASE=wordpress
-SQL_USER=tazerotu_db
+SQL_USER=ttas_db
 SQL_PASSWORD=
 SQL_ROOT_PASSWORD=
 
-WORDPRESS_URL=tazerotu.42.fr
-WORDPRESS_ADMIN_USER=tazerotu
+WORDPRESS_URL=ttas.42.fr
+WORDPRESS_ADMIN_USER=ttas
 WORDPRESS_ADMIN_PASS=
-WORDPRESS_ADMIN_EMAIL=tazerotu@student.42.fr
-WORDPRESS_USER=tazerotu_user
+WORDPRESS_ADMIN_EMAIL=ttas@student.42.fr
+WORDPRESS_USER=ttas_user
 WORDPRESS_USER_PASS=
-WORDPRESS_USER_EMAIL=tazerotu_user@student.42.fr
+WORDPRESS_USER_EMAIL=ttas_user@student.42.fr
 ```
 
 ### `secrets/`
@@ -76,8 +76,8 @@ echo "yourrootpassword" > secrets/db_root_password.txt
 make
 
 # Equivalent manual command
-mkdir -p /home/tazerotu/data/db_data
-mkdir -p /home/tazerotu/data/wp_data
+mkdir -p /home/ttas/data/db_data
+mkdir -p /home/ttas/data/wp_data
 docker compose -f srcs/docker-compose.yml up -d --build
 ```
 
@@ -111,8 +111,8 @@ make clean
 
 | Volume     | Mount in container    | Host path                        |
 |------------|-----------------------|----------------------------------|
-| `db_data`  | `/var/lib/mysql`      | `/home/tazerotu/data/db_data`    |
-| `wp_data`  | `/var/www/html`       | `/home/tazerotu/data/wp_data`    |
+| `db_data`  | `/var/lib/mysql`      | `/home/ttas/data/db_data`    |
+| `wp_data`  | `/var/www/html`       | `/home/ttas/data/wp_data`    |
 
 Data persists across `docker compose down` and rebuilds as long as `make clean`
 is not run. The `make clean` target removes the host data directories entirely.

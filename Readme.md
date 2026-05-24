@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by tazerotu.*
+*This project has been created as part of the 42 curriculum by ttas.*
 
 # Inception
 
@@ -39,14 +39,14 @@ communicate by service name (DNS), and only port 443 is exposed to the outside.
 Bind mounts link a host directory directly into the container — simple but fragile and
 host-dependent. Docker named volumes are managed by Docker, more portable, and
 survive container restarts and rebuilds. This project uses named volumes for the WordPress
-files and the MariaDB database, with data stored under `/home/tazerotu/data/` on the host.
+files and the MariaDB database, with data stored under `/home/ttas/data/` on the host.
 
 ## Instructions
 
 ### Prerequisites
 - Docker and Docker Compose installed
 - WSL2 (or a Linux VM)
-- Add `127.0.0.1 tazerotu.42.fr` to your `/etc/hosts`
+- Add `127.0.0.1 ttas.42.fr` to your `/etc/hosts`
 
 ### Run the project
 ```bash

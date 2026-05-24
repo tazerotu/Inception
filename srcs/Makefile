@@ -1,4 +1,4 @@
-USERNAME = tazerotu
+USERNAME = ttas
 
 all:
 	mkdir -p /home/$(USERNAME)/data/db_data
