@@ -1,7 +1,0 @@
-
-docker exec -it mariadb bash
-
-
-mysql -u root -p
-# enter your SQL_ROOT_PASSWORD when prompted
-
